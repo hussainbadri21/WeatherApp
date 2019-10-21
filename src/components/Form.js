@@ -1,6 +1,7 @@
 import React from 'react';
+import config from "../configs/config"
 
-const Places_Api_Key = "AIzaSyADrpS7KSbPb8OHntxRkELrpO186pmJt8g";
+const Api_Key = config.places_api_key;
 
 class Form extends React.Component {
     constructor(props) {
@@ -26,7 +27,7 @@ class Form extends React.Component {
             headers: headers,
         };
         const proxyurl = "https://cors-anywhere.herokuapp.com/";
-        const url =`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${input}&types=(cities)&key=${Places_Api_Key}`;
+        const url =`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${input}&types=(cities)&key=${Api_Key}`;
 
         const ajax = await fetch(proxyurl+url);
         const response = await ajax.json();
