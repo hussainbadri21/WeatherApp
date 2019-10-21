@@ -1,0 +1,77 @@
+html, body, #root, .main-container {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.left_card {
+    background: #0070E1;
+    color: white;
+    font-weight: bold;
+    font-size: 8rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_card {
+    background: white;
+}
+
+
+.title_sub_header {
+    color: #000;
+    font-weight: normal;
+}
+
+.weather_display_div, .weather_fetch_form {
+    margin: 10rem 5rem;
+}
+
+.weather_display_div .location {
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.weather_display_div .weather_div {
+    display: flex;
+}
+
+.weather_display_div .weather_div .weather_temp {
+    font-weight: bold;
+    font-size: 8rem;
+    display: flex;
+}
+
+.weather_display_div .weather_div .temp_unit {
+    font-weight: bold;
+    font-size: 2rem;
+    color: gainsboro;
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    margin-top: -2rem;
+}
+
+.weather_display_div .weather_div .temp_unit .active {
+    color: #0070E1;
+}
+
+.weather_display_div .weather {
+    text-transform: capitalize;
+}
+
+.weather_fetch_form .submit_btn {
+    background: #0070E1;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+}
+
+.temp_C, .temp_F {
+    background: none;
+    border: none;
+    outline: 0;
+}
