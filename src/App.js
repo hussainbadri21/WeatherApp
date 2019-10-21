@@ -4,8 +4,9 @@ import './App.css';
 import Title from "./components/Title";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
+import config from "./configs/config"
 
-const Api_Key = "8d2de98e089f1c28e1a22fc19a24ef04";
+const Api_Key = config.weather_api_key;
 
 class App extends React.Component {
     constructor(props) {
@@ -69,7 +70,7 @@ class App extends React.Component {
                     tempC={this.state.tempC}
                 /> : <></>}
 
-                    <Form loadWeather={this.getWeather}/>
+                    <Form loadWeather={this.getWeather} />
                 </div>
             </div>
         );
